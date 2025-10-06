@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho_titulo">JV</h1>
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="index.html"><img src="assets/home.png" alt="ícone de uma casa" width="25px"> Home</a>
+            <a class="cabecalho_menu_link" href="sobre_mim.html"><img src="assets/me.png" alt="ícone de uma pessoa" width="25px"> Sobre mim</a>
+            <a class="cabecalho_menu_link" href="cadastro.html"><img src="assets/cadastro.png" alt="ícone de cadastro" width="25px"> Cadastro</a>
+            <a class="cabecalho_menu_link" href="produtos.html"><img src="assets/produtos.png" alt="ícone de produtos" width="25px"> Produtos</a>
+            <a class="cabecalho_menu_link" href="fale_comigo.html"><img src="assets/contato.png" alt="ícone de contato" width="25px"> Fale Comigo</a>
+            <a class="cabecalho_menu_link" href="mais_vendidos.html"><img src="assets/mais_vendidos.png" alt="Mais Vendidos" width="25px"> Mais Vendidos</a>
+        </nav>
+    </header>
+
+    <main>
+            <h1 class="apresentacao_conteudo_titulo_cadasto">Cadastro</h1>
+            <br>
+            <div class="cadastro">
+                <form action="GET">
+                    <label>Nome: </label>
+                    <input type="text" name="txtNome" size="50" title="Digite seu nome" maxlength="40" class="txt">
+                    <br><br>
+                    <label>Senha: </label>
+                    <input type="password" name="txtSenha" size="50" title="Digite sua senha" maxlength="8">
+                    <br><br>
+                    <label>Email: </label>
+                    <input type="email" name="txtEmail" size="50">
+                    <br><br>
+                    <label>Data de nascimento: </label>
+                    <input type="date" name="txtData">
+                    <br><br>
+                    <label>Sexo:</label>
+                    <br>
+                    <input type="radio" name="radSexo" value="Masculino"> Masculino
+                    <input type="radio" name="radSexo" value="Feminino"> Feminino
+                    <br><br>
+                    <label>Raça:</label>
+                    <br>
+                    <input type="radio" name="radCor" value="Branco"> Branco
+                    <input type="radio" name="radCor" value="Pardo"> Pardo
+                    <input type="radio" name="radCor" value="Negro"> Negro
+                    <br><br>
+                    <label>Cursos: </label>
+                    <br>
+                    <input type="checkbox" name="chkCursos" value="html"> HTML
+                    <input type="checkbox" name="chkCursos" value="css"> CSS
+                    <input type="checkbox" name="chkCursos" value="js"> JavaScript
+                    <input type="checkbox" name="chkCursos" value="react"> React
+                    <br><br>
+                    <label>Turno: </label>
+                    <br>
+                    <select name="optTurno">
+                        <option value="Matutino">Matutino</option>
+                        <option value="Vespertino">Vespertino</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                    <br><br>
+                    <label>Faça sua sugestão: </label>
+                    <br>
+                    <textarea name="txtSugestao" rows="10" cols="50"></textarea>
+                    <br><br>
+                    <div class="cadastro_botoes">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <p class="rodape_3">Desenvolvido por João Vitor Lemos</p>
+    </footer>
+</body>
+</html>
