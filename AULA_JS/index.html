@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <h1>Troca cor</h1>
+    <form id="formCor">
+        <select id="selecionaCor">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        <button type="submit">Troca cor</button>
+    </form>
+
+    <script>
+
+        document.getElementById('formCor').addEventListener ('submit', function(event) {
+            event.preventDefault();
+
+        var cor = document.getElementById('selecionaCor').value;
+
+        switch(cor) {
+        case 'red':
+            document.body.style.backgroundColor = 'red';
+            document.querySelector('h1').textContent = 'Fogo';
+            break;
+        case 'blue':
+            document.body.style.backgroundColor = 'blue';
+            document.querySelector('h1').textContent = 'Água';
+            break;
+        case 'green':
+            document.body.style.backgroundColor = 'green';
+            document.querySelector('h1').textContent = 'Planta';
+            break;
+        default:
+            document.body.style.backgroundColor = 'white';
+        }
+    });
+    
+    </script>
+</body>
+</html>
