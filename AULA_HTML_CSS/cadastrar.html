@@ -25,34 +25,47 @@
             <div class="cadastro">
                 <form action="GET">
                     <label>Nome: </label>
-                    <input type="text" name="txtNome" size="50" title="Digite seu nome" maxlength="40" class="txt">
+                    <input type="text" name="txtNome" size="50" title="Digite seu nome" required maxlength="40" class="txt">
+                    <span class="mensagem_erro"></span>
                     <br><br>
                     <label>Senha: </label>
-                    <input type="password" name="txtSenha" size="50" title="Digite sua senha" maxlength="8">
+                    <input type="password" name="txtSenha" size="50" title="Digite sua senha" required maxlength="8">
+                    <span class="mensagem_erro"></span>
                     <br><br>
                     <label>Email: </label>
-                    <input type="email" name="txtEmail" size="50">
+                    <input type="email" name="txtEmail" required size="50">
+                    <span class="mensagem_erro"></span>
                     <br><br>
                     <label>Data de nascimento: </label>
-                    <input type="date" name="txtData">
+                    <input type="date" required name="txtData">
+                    <span class="mensagem_erro"></span>
                     <br><br>
-                    <label>Sexo:</label>
-                    <br>
-                    <input type="radio" name="radSexo" value="Masculino"> Masculino
-                    <input type="radio" name="radSexo" value="Feminino"> Feminino
+                    <div>
+                        <label>Sexo:</label>
+                        <br>
+                        <input type="radio" name="radSexo" value="Masculino" class="escolha"> Masculino
+                        <input type="radio" name="radSexo" value="Feminino" class="escolha"> Feminino
+                        <span class="mensagem_erro"></span>
+                    </div>
                     <br><br>
-                    <label>Raça:</label>
-                    <br>
-                    <input type="radio" name="radCor" value="Branco"> Branco
-                    <input type="radio" name="radCor" value="Pardo"> Pardo
-                    <input type="radio" name="radCor" value="Negro"> Negro
+                    <div>
+                        <label>Raça:</label>
+                        <br>
+                        <input type="radio" name="radCor" value="Branco" class="escolha"> Branco
+                        <input type="radio" name="radCor" value="Pardo" class="escolha"> Pardo
+                        <input type="radio" name="radCor" value="Negro" class="escolha"> Negro
+                        <span class="mensagem_erro"></span>
+                    </div>
                     <br><br>
-                    <label>Cursos: </label>
-                    <br>
-                    <input type="checkbox" name="chkCursos" value="html"> HTML
-                    <input type="checkbox" name="chkCursos" value="css"> CSS
-                    <input type="checkbox" name="chkCursos" value="js"> JavaScript
-                    <input type="checkbox" name="chkCursos" value="react"> React
+                    <div>
+                        <label>Cursos: </label>
+                        <br>
+                        <input type="checkbox" name="chkCursos" value="html" class="escolha"> HTML
+                        <input type="checkbox" name="chkCursos" value="css" class="escolha"> CSS
+                        <input type="checkbox" name="chkCursos" value="js" class="escolha"> JavaScript
+                        <input type="checkbox" name="chkCursos" value="react" class="escolha"> React
+                        <span class="mensagem_erro"></span>
+                    </div>
                     <br><br>
                     <label>Turno: </label>
                     <br>
@@ -77,5 +90,7 @@
     <footer>
         <p class="rodape_3">Desenvolvido por João Vitor Lemos</p>
     </footer>
+
+    <script src="validacao.js" type="module"></script>
 </body>
 </html>

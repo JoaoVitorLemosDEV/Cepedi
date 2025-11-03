@@ -17,7 +17,6 @@ const tiposDeErro = [
     'customError'
 ]
 
-
 const mensagens = {
     nome: {
         valueMissing: "O campo de nome não pode estar vazio.",
@@ -48,7 +47,6 @@ const mensagens = {
         valueMissing: 'Você deve aceitar nossos termos antes de continuar.',
     }
 }
-
 
 function verificaCampo(campo){
 

@@ -378,3 +378,9 @@ body{
     flex: 1;
     margin: 0;
 }
+
+.mensagem_erro {
+    display: block;
+    color: red;
+    margin-top: 5px;
+}
