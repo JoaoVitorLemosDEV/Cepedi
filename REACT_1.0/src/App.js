@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import Logo from './componentes/Logo';
+import Navegacao from './componentes/Navegacao';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Hello World!
-        </p>
+        <Logo></Logo>
+        <Navegacao></Navegacao>
       </header>
     </div>
   );
