@@ -1,0 +1,16 @@
+.icones{
+    display: flex;
+}
+
+.opcao_icone{
+    display: flex;
+    height: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.opcao_icone img{
+    width: 25px;
+    margin-right: 8px;
+    padding: 10px;
+}
