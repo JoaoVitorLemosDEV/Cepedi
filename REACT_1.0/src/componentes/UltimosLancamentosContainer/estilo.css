@@ -1,0 +1,6 @@
+.UltimosLancamentos{
+    background-color: #EBECEE;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}

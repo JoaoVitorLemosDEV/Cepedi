@@ -1,6 +1,7 @@
 import './estilo.css';
 import Titulo from '../Titulo';
 import Subtitulo from '../Subtitulo';
+import Resultado from '../Resultado';
 import { useState } from 'react';
 import { livros } from './dadosPesquisa';
 
@@ -20,10 +21,10 @@ function Pesquisa() {
             }}></input>
 
             {livrosPesquisados.map(livro => (
-                    <div>
+                    <Resultado>
                         <p>{livro.nome}</p>
                         <img src= {livro.src} alt='livro'></img>
-                    </div>
+                    </Resultado>
             ))}
             {/* <p>{textoDigitado}</p> */}
         </section>

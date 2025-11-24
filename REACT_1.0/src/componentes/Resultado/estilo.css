@@ -1,0 +1,22 @@
+.resultadoPesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+p{
+    width: 200px;
+    color: black;
+    font-weight: 500;
+}
+
+img{
+    width: 100px;
+}
+
+&:hover {
+    border: 1px solid white;
+}
