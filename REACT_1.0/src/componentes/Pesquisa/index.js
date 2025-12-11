@@ -3,11 +3,23 @@ import Titulo from '../Titulo';
 import Subtitulo from '../Subtitulo';
 import Resultado from '../Resultado';
 import { useState } from 'react';
-import { livros } from './dadosPesquisa';
+// import { livros } from './dadosPesquisa';
+import { getLivros } from '../../servicos/livros';
+import { useEffect } from 'react';
 
 function Pesquisa() {
     // const [textoDigitado, setTextoDigitado] = useState('');
     const [livrosPesquisados, setLivrosPesquisados] = useState([]);
+    const [livros, setLivros] = useState([]);
+    
+    useEffect (() => {
+        fetchLivros();
+    }, [])
+
+    async function fetchLivros() {
+        const livrosDaAPI = await getLivros()
+        setLivros(livrosDaAPI);
+    }
 
     return(
         <section className='pesquisa'>
