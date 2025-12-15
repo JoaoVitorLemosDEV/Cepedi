@@ -1,8 +1,8 @@
 import './estilo.css';
 
-function Resultado({children}) {
+function Resultado({children, onClick}) {
     return(
-        <div className='resultadoPesquisa'>
+        <div className='resultadoPesquisa' onClick={onClick}>
             {children}
         </div>
     )

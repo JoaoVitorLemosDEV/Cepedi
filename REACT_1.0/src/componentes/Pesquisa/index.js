@@ -6,6 +6,7 @@ import { useState } from 'react';
 // import { livros } from './dadosPesquisa';
 import { getLivros } from '../../servicos/livros';
 import { useEffect } from 'react';
+import { postFavorito } from '../../servicos/favoritos';
 
 function Pesquisa() {
     // const [textoDigitado, setTextoDigitado] = useState('');
@@ -21,6 +22,11 @@ function Pesquisa() {
         setLivros(livrosDaAPI);
     }
 
+    async function inserirFavorito(id) {
+        await postFavorito(id);
+        alert('Livro de id ' + id + ' inserido!')
+    }
+
     return(
         <section className='pesquisa'>
             <Titulo>Já sabe por onde começar?</Titulo>
@@ -33,7 +39,7 @@ function Pesquisa() {
             }}></input>
 
             {livrosPesquisados.map(livro => (
-                    <Resultado>
+                    <Resultado onClick={() => inserirFavorito(livro.id)}>
                         <p>{livro.nome}</p>
                         <img src= {livro.src} alt='livro'></img>
                     </Resultado>

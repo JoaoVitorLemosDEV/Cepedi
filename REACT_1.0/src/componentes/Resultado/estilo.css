@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     cursor: pointer;
+    max-width: 220px;
 }
 
 p{
@@ -17,6 +18,6 @@ img{
     width: 100px;
 }
 
-&:hover {
-    border: 1px solid white;
+.resultadoPesquisa:hover {
+    border: 2px solid black;
 }
